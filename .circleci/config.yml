@@ -7,10 +7,10 @@ jobs:
       - checkout
       - run:
           name: Restore Packages
-          command: dotnet restore
+          command: dotnet restore --no-cache --force --verbosity normal
       - run:
           name: Build
-          command: dotnet build --no-restore
+          command: dotnet build --no-restore --no-incremental --verbosity normal
       - run:
           name: Run Tests
-          command: dotnet test --no-build --no-restore PrimeService.Tests
+          command: dotnet test --no-build --no-restore --verbosity normal PrimeService.Tests

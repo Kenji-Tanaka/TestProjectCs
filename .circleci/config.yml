@@ -2,12 +2,15 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: microsoft/dotnet:2.1-sdk-alpine
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Restore Packages
+          command: dotnet restore
       - run:
-          name: Print the Current Time
-          command: date
+          name: Build
+          command: dotnet build --no-restore
+      - run:
+          name: Run Tests
+          command: dotnet test --no-build --no-restore PrimeService.Tests

@@ -1,0 +1,3 @@
+= Test-Projekt #1 image:https://circleci.com/gh/Kenji-Tanaka/TestProjectCs.svg?style=svg["CircleCI", link="https://circleci.com/gh/Kenji-Tanaka/TestProjectCs"]
+
+Dies ist ein Testprojekt zum Ausprobieren von CircleCI und seiner Integration in GitHub.

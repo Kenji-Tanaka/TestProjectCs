@@ -2,6 +2,21 @@
 	<PropertyGroup>
 		<TargetFramework>netcoreapp2.0</TargetFramework>
 		<IsPackable>false</IsPackable>
+		<Version>1.0.0</Version>
+		<Authors>Kenji Tanaka</Authors>
+		<Company>Tanaka Inc.</Company>
+		<Product>Prime Service Tests</Product>
+		<PackageId>PrimeService.Tests</PackageId>
+		<NeutralLanguage>de</NeutralLanguage>
+		<Description>Ein Testprojekt mit .NET Core und CircleCI</Description>
+		<Copyright>© 2018</Copyright>
+		<PackageLicenseUrl></PackageLicenseUrl>
+		<PackageProjectUrl>https://github.com/Kenji-Tanaka/TestProjectCs</PackageProjectUrl>
+		<PackageIconUrl></PackageIconUrl>
+		<RepositoryUrl>https://github.com/Kenji-Tanaka/TestProjectCs</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>C#</PackageTags>
+		<PackageReleaseNotes>Release</PackageReleaseNotes>
 	</PropertyGroup>
 	<PropertyGroup>
 		<OutputPath>..\output\bin\$(MSBuildProjectName)\$(Configuration)\</OutputPath>

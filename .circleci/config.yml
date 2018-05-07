@@ -4,6 +4,8 @@ jobs:
         docker:
             - image: microsoft/dotnet:2.1-sdk-alpine
         steps:
+            - add_ssh_keys:
+                fingerprints: 'c2:be:19:3d:78:2a:9f:05:0e:bc:08:61:53:59:4e:08'
             - checkout
             - run:
                     name: Restore Packages

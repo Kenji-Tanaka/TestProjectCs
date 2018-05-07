@@ -14,7 +14,7 @@ jobs:
             - run:
                     name: Run Tests
                     command: dotnet test --no-restore --no-build --verbosity normal --configuration Release --logger:'nunit;LogFilePath=../output/tests/results.xml' PrimeService.Tests
-            - store_test_results:
+            - store_artifacts:
                 path: output/tests/
             - run:
                     name: Packaging

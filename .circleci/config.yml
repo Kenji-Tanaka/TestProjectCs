@@ -1,16 +1,16 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: microsoft/dotnet:2.1-sdk-alpine
-    steps:
-      - checkout
-      - run:
-          name: Restore Packages
-          command: dotnet restore --no-cache --force --verbosity normal
-      - run:
-          name: Build
-          command: dotnet build --no-restore --no-incremental --verbosity normal
-      - run:
-          name: Run Tests
-          command: dotnet test --no-build --no-restore --verbosity normal PrimeService.Tests
+    build:
+        docker:
+            - image: microsoft/dotnet:2.1-sdk-alpine
+        steps:
+            - checkout
+            - run:
+                    name: Restore Packages
+                    command: dotnet restore --no-cache --force --verbosity normal
+            - run:
+                    name: Build
+                    command: dotnet build --no-restore --no-incremental --verbosity normal
+            - run:
+                    name: Run Tests
+                    command: dotnet test --no-restore --no-build --verbosity normal PrimeService.Tests

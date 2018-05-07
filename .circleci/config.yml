@@ -16,6 +16,6 @@ jobs:
                     command: dotnet test --no-restore --no-build --verbosity normal --configuration Release PrimeService.Tests
             - run:
                     name: Packaging
-                    command: dotnet pack --no-restore --no-build --verbosity normal --configuration Release --output "..\output\packages\"
+                    command: dotnet pack --no-restore --no-build --verbosity normal --configuration Release --output '..\output\packages\'
             - store_artifacts:
                 path: output/packages/

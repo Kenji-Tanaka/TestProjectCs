@@ -13,7 +13,7 @@ jobs:
                     command: dotnet build --no-restore --no-incremental --verbosity normal --configuration Release
             - run:
                     name: Run Tests
-                    command: dotnet test --no-restore --no-build --verbosity normal --configuration Release --test-adapter-path:. --logger:nunit;LogFilePath=..\output\tests\results.xml PrimeService.Tests
+                    command: dotnet test --no-restore --no-build --verbosity normal --configuration Release --logger:nunit;LogFilePath=..\output\tests\results.xml PrimeService.Tests
             - store_test_results:
                 path: output/tests/
             - run:

@@ -10,7 +10,7 @@ jobs:
                     command: dotnet restore --no-cache --force --verbosity normal
             - run:
                     name: Build
-                    command: dotnet build --no-restore --no-incremental --verbosity normal
+                    command: dotnet build --no-restore --no-incremental --verbosity normal --configuration Release
             - run:
                     name: Run Tests
-                    command: dotnet test --no-restore --no-build --verbosity normal PrimeService.Tests
+                    command: dotnet test --no-restore --no-build --verbosity normal --configuration Release PrimeService.Tests

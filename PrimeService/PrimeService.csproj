@@ -7,12 +7,12 @@
 		<Product>Prime Service</Product>
 		<PackageId>PrimeService</PackageId>
 		<NeutralLanguage>de</NeutralLanguage>
-		<Description>Ein Testprojekt mir .NET Core und CircleCI</Description>
+		<Description>Ein Testprojekt mit .NET Core und CircleCI</Description>
 		<Copyright>© 2018</Copyright>
 		<PackageLicenseUrl></PackageLicenseUrl>
 		<PackageProjectUrl>https://github.com/Kenji-Tanaka/TestProjectCs</PackageProjectUrl>
 		<PackageIconUrl></PackageIconUrl>
-		<RepositoryUrl>https://github.com/Kenji-Tanaka/TestProjectCs</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Kenji-Tanaka/TestProjectCs.git</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>C#</PackageTags>
 		<PackageReleaseNotes>Release</PackageReleaseNotes>
